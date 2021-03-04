@@ -13,7 +13,8 @@ import PieChart from './PieChart';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: '20px'
+    padding: '20px',
+    paddingTop:'8px',
   },
   paper: {
     padding: theme.spacing(2),
@@ -88,8 +89,11 @@ export default function MainGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         <Grid item xs={12} style={{ textAlign: 'center' }}>
+          <a target="_blank" href="https://www.vecteezy.com/free-vector/glass">
+            <img style={{ width: "100px" }} src="logo.jpg" />
+          </a>
           <SelectCountry />
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -146,7 +150,7 @@ export default function MainGrid() {
             </Grid>
             <Grid item xs={12} sm={6}>
               <Paper className={classes.paper}>
-                <PieChart barData={{ infected: totalNum, recoverd: recNum, deths: detNum }}/>
+                <PieChart barData={{ infected: totalNum, recoverd: recNum, deths: detNum }} />
               </Paper>
             </Grid>
           </Grid>

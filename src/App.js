@@ -10,7 +10,6 @@ function App() {
       <CountryContext.Provider value={initialContext}>
         <div className="App">
             <Header/> 
-            <br/>
             <MainGrid/>
         </div>
       </CountryContext.Provider>
