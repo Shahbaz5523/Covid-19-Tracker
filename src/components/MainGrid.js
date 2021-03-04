@@ -92,7 +92,7 @@ export default function MainGrid() {
       <Grid container spacing={2}>
         <Grid item xs={12} style={{ textAlign: 'center' }}>
           <a target="_blank" href="https://www.vecteezy.com/free-vector/glass">
-            <img style={{ width: "100px" }} src="logo.jpg" />
+            <img style={{ width: "100px" }} alt="Coivd 19 Tracker" src="logo.jpg" />
           </a>
           <SelectCountry />
         </Grid>
