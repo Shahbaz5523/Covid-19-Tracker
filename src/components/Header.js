@@ -25,7 +25,7 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Covid19 
+            Covid19 Tracker
             <AssessmentIcon style={{verticalAlign:'middle'}}/>
           </Typography>
           <Typography variant="body2" className={classes.createdBY}>

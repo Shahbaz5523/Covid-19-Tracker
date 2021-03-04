@@ -5,7 +5,7 @@ import MainGrid from './components/MainGrid';
 import CountryContext from './components/CountryContext/CountryContext';
 
 function App() {
-  let initialContext = useState('Global');
+  let initialContext = useState();
   return (
       <CountryContext.Provider value={initialContext}>
         <div className="App">

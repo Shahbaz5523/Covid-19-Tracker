@@ -1,4 +1,4 @@
-import React , {useContext , useEffect} from 'react';
+import React, { useContext, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
@@ -27,9 +27,10 @@ export default function SelectCountry() {
         setCountry(event.target.value);
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         data[1](country);
-    },[country, data])
+        console.log(data[0])
+    }, [country, data])
 
     return (
         <div>
